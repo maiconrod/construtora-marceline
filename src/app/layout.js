@@ -10,6 +10,13 @@ const poppins = Poppins({
 export const metadata = {
   title: "Construtora Marceline",
   description: "Materializando sonhos há 10 anos",
+  favicon: "/favicon.svg",
+  contentType: "website",
+  language: "pt-BR",
+  author: "Maicon Rodrigues",
+  keywords: ["construtora Marceline", "construtora", "obras", "Marceline", "imóveis", "apartamentos"],
+  canonicalUrl: "",
+  charset: "UTF-8"
 };
 
 export default function RootLayout({ children }) {
