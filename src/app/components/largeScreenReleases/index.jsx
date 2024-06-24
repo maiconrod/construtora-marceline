@@ -16,7 +16,6 @@ export const LargeScreenReleases = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsXl(window.innerWidth >= 1280);
       setIs2xl(window.innerWidth >= 1440);
     };
 
@@ -30,9 +29,9 @@ export const LargeScreenReleases = () => {
 
   const descriptionAnimation = is2xl
     ? {
-        initial: { opacity: 0, x: 1400, y: -200 },
-        whileInView: { opacity: 1, x: 640, y: -200 },
-        exit: { opacity: 0, x: 1400, y: -200 },
+        initial: { opacity: 0, x: 800, y: -180 },
+        whileInView: { opacity: 1, x: 550, y: -180 },
+        exit: { opacity: 0, x: 800, y: -180 },
         transition: { duration: 0.7 },
       }
     : {
@@ -44,9 +43,9 @@ export const LargeScreenReleases = () => {
 
   const descriptionLeftAnimation = is2xl
     ? {
-        initial: { opacity: 0, x: -1200, y: -200 },
-        whileInView: { opacity: 1, x: -720, y: -200 },
-        exit: { opacity: 0, x: -1200, y: -200 },
+        initial: { opacity: 0, x: -1200, y: -180 },
+        whileInView: { opacity: 1, x: -620, y: -180 },
+        exit: { opacity: 0, x: -1200, y: -180 },
         transition: { duration: 0.7 },
       }
     : {
@@ -59,7 +58,7 @@ export const LargeScreenReleases = () => {
   const titleAnimation = is2xl
     ? {
         initial: { opacity: 0, x: -600, y: -110 },
-        whileInView: { opacity: 1, x: 1400, y: -110 },
+        whileInView: { opacity: 1, x: 1200, y: -110 },
         exit: { opacity: 0, x: -600, y: -110 },
         transition: { duration: 0.7 },
       }
@@ -71,9 +70,9 @@ export const LargeScreenReleases = () => {
       };
   const titleLeftAnimation = is2xl
     ? {
-        initial: { opacity: 0, x: 300, y: 0 },
-        whileInView: { opacity: 1, x: -500, y: 0 },
-        exit: { opacity: 0, x: 600, y: 0 },
+        initial: { opacity: 0, x: 300, y: 10 },
+        whileInView: { opacity: 1, x: -570, y: 10 },
+        exit: { opacity: 0, x: 600, y: 10 },
         transition: { duration: 0.7 },
       }
     : {
