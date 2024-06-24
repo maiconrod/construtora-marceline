@@ -11,11 +11,13 @@ const playball = Playball({
 });
 
 export const LargeScreenReleases = () => {
+  const [isXl, setIsXl] = useState(false);
   const [is2xl, setIs2xl] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIs2xl(window.innerWidth >= 1728);
+      setIsXl(window.innerWidth >= 1280);
+      setIs2xl(window.innerWidth >= 1440);
     };
 
     window.addEventListener("resize", handleResize);
@@ -29,20 +31,21 @@ export const LargeScreenReleases = () => {
   const descriptionAnimation = is2xl
     ? {
         initial: { opacity: 0, x: 1400, y: -200 },
-        whileInView: { opacity: 1, x: 750, y: -200 },
+        whileInView: { opacity: 1, x: 640, y: -200 },
         exit: { opacity: 0, x: 1400, y: -200 },
         transition: { duration: 0.7 },
       }
     : {
         initial: { opacity: 0, x: 1000, y: -100 },
-        whileInView: { opacity: 1, x: 550, y: -100 },
+        whileInView: { opacity: 1, x: 480, y: -100 },
         exit: { opacity: 0, x: 1000, y: -100 },
         transition: { duration: 0.7 },
       };
+
   const descriptionLeftAnimation = is2xl
     ? {
         initial: { opacity: 0, x: -1200, y: -200 },
-        whileInView: { opacity: 1, x: -830, y: -200 },
+        whileInView: { opacity: 1, x: -720, y: -200 },
         exit: { opacity: 0, x: -1200, y: -200 },
         transition: { duration: 0.7 },
       }
@@ -56,7 +59,7 @@ export const LargeScreenReleases = () => {
   const titleAnimation = is2xl
     ? {
         initial: { opacity: 0, x: -600, y: -110 },
-        whileInView: { opacity: 1, x: 1450, y: -110 },
+        whileInView: { opacity: 1, x: 1400, y: -110 },
         exit: { opacity: 0, x: -600, y: -110 },
         transition: { duration: 0.7 },
       }
@@ -69,7 +72,7 @@ export const LargeScreenReleases = () => {
   const titleLeftAnimation = is2xl
     ? {
         initial: { opacity: 0, x: 300, y: 0 },
-        whileInView: { opacity: 1, x: -580, y: 0 },
+        whileInView: { opacity: 1, x: -500, y: 0 },
         exit: { opacity: 0, x: 600, y: 0 },
         transition: { duration: 0.7 },
       }
@@ -114,7 +117,7 @@ export const LargeScreenReleases = () => {
               </motion.h2>
             </div>
             <motion.div
-              className="absolute top-1/2 -right-20 transform translate-x-[450px] xl:translate-x-[440px] 2xl:translate-x-[900px] -translate-y-1/2 bg-green-sections/90 p-5 xl:px-12 w-[700px] 2xl:w-[1000px] h-[250px] 2xl:h-[350px]"
+              className="absolute top-1/2 -right-20 transform translate-x-[450px] xl:translate-x-[440px] 2xl:translate-x-[900px] -translate-y-1/2 bg-green-sections/90 p-5 xl:px-12 w-[800px] 2xl:w-[1000px] h-[250px] 2xl:h-[350px]"
               {...descriptionAnimation}
             >
               <p className="text-center text-white font-extralight leading-10 xl:pt-[3%] 2xl:pt-16">
@@ -139,7 +142,7 @@ export const LargeScreenReleases = () => {
         </div>
         <div className="w-3/5 relative">
           <motion.div
-            className="absolute top-1/2 left-0 transform -translate-x-[590px] xl:-translate-x-[530px] 2xl:-translate-x-[730px] 2xl:w-[1000px] 2xl:h-[350px] -translate-y-1/2 bg-green-sections/90 p-5 xl:px-12 w-[700px] h-[250px] z-40"
+            className="absolute top-1/2 left-0 transform -translate-x-[590px] xl:-translate-x-[530px] 2xl:-translate-x-[730px] 2xl:w-[1000px] 2xl:h-[350px] -translate-y-1/2 bg-green-sections/90 p-5 xl:px-12 w-[800px] h-[250px] z-40"
             {...descriptionLeftAnimation}
           >
             <p className="text-center text-white font-extralight leading-10 xl:pt-[3%] 2xl:pt-16">
@@ -203,7 +206,7 @@ export const LargeScreenReleases = () => {
             </div>
 
             <motion.div
-              className="absolute top-1/2 -right-20 transform translate-x-[450px] xl:translate-x-[440px] -translate-y-1/2 bg-green-sections/90 p-5 xl:px-12 w-[700px] h-[250px] 2xl:translate-x-[630px] 2xl:w-[1000px] 2xl:h-[350px]"
+              className="absolute top-1/2 -right-20 transform translate-x-[450px] xl:translate-x-[440px] -translate-y-1/2 bg-green-sections/90 p-5 xl:px-12 w-[800px] h-[250px] 2xl:translate-x-[630px] 2xl:w-[1000px] 2xl:h-[350px]"
               {...descriptionAnimation}
             >
               <p className="text-center text-white font-extralight leading-10 2xl:pt-16 xl:pt-[3%]">
@@ -228,7 +231,7 @@ export const LargeScreenReleases = () => {
             </motion.h2>
           </div>
           <motion.div
-            className="absolute top-1/2 left-0 transform -translate-x-[530px] xl:-translate-x-[530px] -translate-y-1/2 bg-green-sections/90 p-5 xl:px-12 w-[700px] h-[250px] 2xl:-translate-x-[700px] 2xl:w-[1000px] 2xl:h-[350px] z-40"
+            className="absolute top-1/2 left-0 transform -translate-x-[530px] xl:-translate-x-[530px] -translate-y-1/2 bg-green-sections/90 p-5 xl:px-12 w-[800px] h-[250px] 2xl:-translate-x-[700px] 2xl:w-[1000px] 2xl:h-[350px] z-40"
             {...descriptionLeftAnimation}
           >
             <p className="text-center text-white font-extralight leading-10 xl:pt-[3%] 2xl:pt-16">
