@@ -24,7 +24,7 @@ export default function Home() {
       <meta name="keywords" content={metadata.keywords} />
       <link rel="canonical" href={metadata.canonicalUrl} />
       <meta charset={metadata.charset} />
-      <meta property="og:image" content="/images/logo-500-gold.png"/>
+      <meta property="og:image" content="/images/imagemOg.png"/>
       <Header />
       <LargeScreenMenuSection/>
       <LargeScreenReleases/>
