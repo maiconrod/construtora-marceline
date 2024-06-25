@@ -11,7 +11,6 @@ const playball = Playball({
 });
 
 export const LargeScreenReleases = () => {
-  const [isXl, setIsXl] = useState(false);
   const [is2xl, setIs2xl] = useState(false);
 
   useEffect(() => {
@@ -58,7 +57,7 @@ export const LargeScreenReleases = () => {
   const titleAnimation = is2xl
     ? {
         initial: { opacity: 0, x: -600, y: -110 },
-        whileInView: { opacity: 1, x: 1200, y: -110 },
+        whileInView: { opacity: 1, x: 1250, y: -110 },
         exit: { opacity: 0, x: -600, y: -110 },
         transition: { duration: 0.7 },
       }

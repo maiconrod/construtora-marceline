@@ -257,7 +257,7 @@ export const Releases = () => {
                   alt="Foto lançamento residencial Pallazzo di Veneza, da Construtora Marceline"
                   width={308}
                   height={173}
-                  className="mx-auto max-w-[90%]"
+                  className="mx-auto w-[90%]"
                 />
               </div>
             </SplideSlide>
@@ -268,7 +268,7 @@ export const Releases = () => {
                   alt="Foto lançamento residencial Pallazzo di Veneza, da Construtora Marceline"
                   width={308}
                   height={173}
-                  className="mx-auto max-w-[90%]"
+                  className="mx-auto w-[90%]"
                 />
               </div>
             </SplideSlide>
@@ -279,7 +279,7 @@ export const Releases = () => {
                   alt="Foto lançamento residencial Pallazzo di Veneza, da Construtora Marceline"
                   width={308}
                   height={173}
-                  className="mx-auto max-w-[90%]"
+                  className="mx-auto w-[90%]"
                 />
               </div>
             </SplideSlide>
@@ -290,7 +290,7 @@ export const Releases = () => {
                   alt="Foto lançamento residencial Pallazzo di Veneza, da Construtora Marceline"
                   width={308}
                   height={173}
-                  className="mx-auto max-w-[90%]"
+                  className="mx-auto w-[90%]"
                 />
               </div>
             </SplideSlide>
