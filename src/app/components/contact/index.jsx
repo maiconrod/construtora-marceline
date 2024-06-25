@@ -38,9 +38,9 @@ export const Contact = () => {
             className='hover:text-white transition-all duration-300 text-2xl lg:text-3xl'
               href="#"
               key={item.id}
-              initial={{ opacity: 0, x: -100 }}
+              initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
+              exit={{ opacity: 0, x: -30 }}
               transition={{ duration: 0.15, delay: index * 0.1 }}
             >
               {item.name}

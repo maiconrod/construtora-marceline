@@ -6,7 +6,7 @@ import '@splidejs/react-splide/css';
 
 export const Enterprises = () => {
   return (
-    <section className="bg-interprise bg-cover bg-no-repeat bg-center pt-6 pb-10 lg:hidden">
+    <section className="bg-interprise bg-cover bg-no-repeat bg-center pt-6 pb-10 lg:hidden overflow-x-hidden">
       <span className="text-white font-extralight text-3xl pl-4 flex items-center justify-start">
         EMPREENDIMENTOS
       </span>

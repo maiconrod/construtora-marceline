@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export const Releases = () => {
   return (
     <section className="mt-6 lg:hidden overflow-x-hidden">
-      <h2 className="text-green-header font-extralight text-3xl ml-4 flex items-center justify-start">
+      <h2 className="text-green-header font-extralight text-3xl pl-4 flex items-center justify-start">
         LANÇAMENTOS
       </h2>
       <div>
@@ -76,9 +76,9 @@ export const Releases = () => {
         <div className="bg-green-sections px-2 py-8 shadow-inner-top">
           <motion.p
           className="text-center text-white font-extralight leading-10"
-          initial={{ opacity: 0, x: -150 }}
+          initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -150 }}
+          exit={{ opacity: 0, x: -20 }}
           transition={{ duration: 0.7 }}
           >
             Inspirado na elegância e no charme de Veneza, o Palazzo di Venezia
@@ -151,9 +151,9 @@ export const Releases = () => {
         </div>
         <div className="bg-green-sections px-2 py-8 shadow-inner-top">
           <motion.p className="text-center text-white font-extralight leading-10"
-          initial={{ opacity: 0, x: 150 }}
+          initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 150 }}
+          exit={{ opacity: 0, x: 20 }}
           transition={{ duration: 0.7 }}
           >
             Com vistas panorâmicas e um design imperial, o Royal Park Tower se
@@ -226,9 +226,9 @@ export const Releases = () => {
         </div>
         <div className="bg-green-sections px-2 py-8 shadow-inner-top">
           <motion.p className="text-center text-white font-extralight leading-10"
-          initial={{ opacity: 0, x: -150 }}
+          initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -150 }}
+          exit={{ opacity: 0, x: -20 }}
           transition={{ duration: 0.7 }}
           >
             Situado em uma localização privilegiada, o Bellevue Heights oferece
@@ -301,9 +301,9 @@ export const Releases = () => {
         </div>
         <div className="bg-green-sections px-2 py-8 shadow-inner-top">
           <motion.p className="text-center text-white font-extralight leading-10"
-          initial={{ opacity: 0, x: 150 }}
+          initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 150 }}
+          exit={{ opacity: 0, x: 20 }}
           transition={{ duration: 0.7 }}
           >
             O Infinity Residences é o epitome da elegância e modernidade. Com

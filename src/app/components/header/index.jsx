@@ -41,9 +41,9 @@ export const Header = () => {
       <div className="w-full bg-green-header opacity-80 flex items-center justify-between px-5">
         <motion.a
           href="#"
-          initial={{ opacity: 0, x: 200 }}
+          initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 200 }}
+          exit={{ opacity: 0, x: 20 }}
           transition={{ duration: 0.5 }}
         >
           <Image
@@ -59,9 +59,9 @@ export const Header = () => {
               className="hover:text-white transition-all duration-300"
               href="#"
               key={item.id}
-              initial={{ opacity: 0, x: -100 }}
+              initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
+              exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.15, delay: index * 0.1 }}
             >
               {item.name}
@@ -82,10 +82,10 @@ export const Header = () => {
         {open && (
           <motion.div
             className="w-full bg-green-sections/80 flex flex-col items-center justify-center gap-4 py-3 text-white font-light absolute z-10"
-            initial={{ opacity: 0, y: -150 }}
+            initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -150 }}
-            transition={{ duration: 0.25 }}
+            exit={{ opacity: 0, y: -50 }}
+            transition={{ duration: 0.5 }}
           >
             {navLinks.map((link) => (
               <ul key={link.id} className="w-full text-center">
