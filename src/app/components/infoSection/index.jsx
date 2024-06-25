@@ -8,9 +8,9 @@ export const InfoSection = () => {
       <div className="w-full pt-20 flex flex-col xl:flex-row xl:justify-center xl:items-center xl:pl-0 xl:gap-24 xl:mb-10 items-baseline justify-center pl-[10%] md:pl-[35%]">
         <motion.div
           className="flex items-center justify-center gap-2 mb-10"
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 0, x: -150 }}
           whileInView={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -200 }}
+          exit={{ opacity: 0, x: -150 }}
           transition={{ duration: 0.7 }}
         >
           <Image
@@ -26,9 +26,9 @@ export const InfoSection = () => {
         </motion.div>
         <motion.div
           className="flex items-center justify-center gap-2 mb-10"
-          initial={{ opacity: 0, x: 200 }}
+          initial={{ opacity: 0, x: 150 }}
           whileInView={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 200 }}
+          exit={{ opacity: 0, x: 150 }}
           transition={{ duration: 0.7 }}
         >
           <Image
@@ -44,9 +44,9 @@ export const InfoSection = () => {
         </motion.div>
         <motion.div
           className="flex items-center justify-center gap-2 mb-10"
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 0, x: -150 }}
           whileInView={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -200 }}
+          exit={{ opacity: 0, x: -150 }}
           transition={{ duration: 0.7 }}
         >
           <Image

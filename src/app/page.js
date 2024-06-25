@@ -2,7 +2,7 @@ import { About } from "./components/about";
 import { AdmSection } from "./components/admSection";
 import { Contact } from "./components/contact";
 import { CopyRight } from "./components/copyrightFooter";
-import { Interprises } from "./components/enterprises";
+import { Enterprises } from "./components/enterprises";
 import { Header } from "./components/header";
 import { InfoSection } from "./components/infoSection";
 import { LargeScreenAdmSection } from "./components/largeScreenAdmSection";
@@ -14,7 +14,7 @@ import { metadata } from "./layout";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <title>{metadata.title}</title>
       <meta name="description" content={metadata.description} />
       <link rel="icon" href={metadata.favicon} />
@@ -28,7 +28,7 @@ export default function Home() {
       <Header />
       <LargeScreenMenuSection/>
       <LargeScreenReleases/>
-      <Interprises />
+      <Enterprises />
       <InfoSection />
       <LargeScreenAdmSection/>
       <AdmSection />
